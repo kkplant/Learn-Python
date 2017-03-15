@@ -51,4 +51,31 @@ for name in L:
 
 #break
 #在循环中，break语句可以提前退出循环
+n=1
+while n<=20:
+    print(n)
+    n=n+1
+print('END')
+
+n=1
+while n<=20:
+    print(n)
+    n=n+1
+    if n>10:
+	    break
+
+#查找出list或者tuple中的第一个偶数或者奇数，并打印出来
+age=[2,4,6,8,10,11,14,16,21]
+for i in age:
+    if i%2==0:
+        continue
+    else:
+        print(i)
+        break
+
+#continue
+#在循环过程中，也可以通过continue语句，跳过当前的这次循环，直接开始下一次循环
+#要特别注意，不要滥用break和continue语句。break和continue会造成代码执行逻辑分叉过多，容易出错
+
+
 
