@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-#list是一种有序可变的集合，是Python内置的数据类型
+#list,列表是一种有序可变的集合，是Python内置的数据类型
 grand=['2','1','2']
 classnum=['1','2','4']
 name=['a','b','c']
@@ -46,3 +46,10 @@ print('删除队尾元素：%s' %list1)
 list1.pop(2)
 print('删除某个元素：%s' %list1)
 
+#list嵌套
+list2=[1,2,3,4]
+list3=[5,6,7,8]
+tuple1=('a','b')
+list4=[list2,list3,tuple1]
+print(list4)
+print(list4[2][1])
