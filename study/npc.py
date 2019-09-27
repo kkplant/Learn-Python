@@ -13,9 +13,10 @@ class Npc(object):
 
 if __name__ == '__main__':
     Tom = Npc(1)
-    Tom.GetHp(realHp=10, SP=None)
-    from testsuites.al.modules.city.enemy import Enemy
-    dog = Enemy(10, 5)
-    dog.GetHp()
-    dog.Attack()
+    Tom.GetHp(1, 2)
+    #Tom.GetHp(realHp=10, SP=None)
+    #from testsuites.al.modules.city.enemy import Enemy
+    #dog = Enemy(10, 5)
+    #dog.GetHp()
+    #dog.Attack()
     # Tom.Attack()
