@@ -10,6 +10,7 @@ L1 = ['adam', 'LISA', 'barT']
 L2 = list(map(normalize,L1))
 print(L2)
 
+
 #请编写一个prod()函数，可以接受一个list并利用reduce()求积
 def prod(L):
     from functools import reduce
@@ -26,6 +27,7 @@ if prod([3, 5, 7, 9]) == 945:
 else:
     print('测试失败!')
 
+
 #利用map和reduce编写一个str2float函数，把字符串'123.456'转换成浮点数123.456：
 def str2float(s):
     from functools import reduce
@@ -41,6 +43,7 @@ def str2float(s):
     #   return a*10+b
     return reduce(fn1,num1)+reduce(fn1,num2)/10**len(num2)
 
+
 #请利用filter()筛选出回文数
 def is_palindrome(s):
     num = str(s)
@@ -51,3 +54,6 @@ def is_palindrome(s):
             return False
 
 print(filter(is_palindrome,[123,12321]))
+
+
+#fasffds
