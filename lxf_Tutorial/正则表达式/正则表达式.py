@@ -35,7 +35,7 @@ else:
 if re.match(r'\w','a'):
     print('\\w match \'a\'')
 else:
-    print('\\w not match \'a\'')    
+    print('\\w not match \'a\'')  
 
 #匹配任意字符：\.
 if re.match(r'\.','9'):
@@ -53,8 +53,7 @@ if re.match(r'\.','+'):
 else:
     print('\\. not match \'+\'')
 
-
-
+#11
 #切分字符串
 ree3 = re.split(r'\s','a b  c')
 print(ree3)
@@ -66,4 +65,21 @@ ree6 = re.split(r'[\s\,\;]+','a, b ; c')
 print(ree6)
 
 #分组
+ree7 = re.match(r'^(\d{3})-(\d{3,8})$','010-12345678')
+print(ree7)
+print('ree7.group(0) is',ree7.group(0))
+print('ree7.group(1) is',ree7.group(1))
+print('ree7.group(2) is',ree7.group(2))
+
+#贪婪匹配
+ree8 = re.match(r'^(\d+)(0*)$','102300').group()
+print(ree8)
+#非贪婪匹配
+ree9 = re.match(r'^(\d+?)(0*)$','102300').group()
+print(ree9)
+
+#编译
+re_telephone = re.compile(r'^(\d{3})-(\d{3,8})$')
+ree10 = re_telephone.match('010-123456').group()
+print(ree10)
 
