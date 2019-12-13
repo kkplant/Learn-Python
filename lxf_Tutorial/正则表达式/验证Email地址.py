@@ -13,4 +13,4 @@ print(is_valid_email('someone@gmail.com'))
 #assert not is_valid_email('mr-bob#example.com')
 #print('ok')
 
-https://jingyan.baidu.com/article/95c9d20d007bfcec4e756113.html
+#https://jingyan.baidu.com/article/95c9d20d007bfcec4e756113.html
